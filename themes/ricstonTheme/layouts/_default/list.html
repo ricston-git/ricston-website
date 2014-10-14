@@ -1,0 +1,37 @@
+{{ partial "default_head.html" . }}
+
+<div id="content">
+    <div style="height:20px"></div>
+    <div class="container">
+        <div class="medium-14 columns">
+            <div class="row">
+                <div class="medium-9 columns">
+
+                    {{ range first 10 .Data.Pages }}
+
+                    <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+
+                    <div style="color:gray" class="row">
+                        {{ .Date.Format "Mon, Jan 2, 2006" }}
+                        {{ partial "tag.html" .}} -
+                        {{ .Params.author }}
+                    </div>
+
+
+                    {{ partial "summary.html" .}}
+                    <hr/>
+                    {{ end }}
+
+                    <div class="row">
+
+                        View older posts in <a href="/posts" title="Posts archive">the archive</a>...
+
+                    </div>
+                </div>
+                {{ partial "miniMessage.html" .}}
+            </div>
+        </div>
+    </div>
+
+    {{ partial "default_foot.html" . }}
+</div>

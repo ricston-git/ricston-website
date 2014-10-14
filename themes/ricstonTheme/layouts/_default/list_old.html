@@ -1,0 +1,12 @@
+
+<article>
+    <header>
+        <h1>{{ .Title }}</a></h1>
+    </header>
+    <ul>
+        {{ range .Data.Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ .Content}}
+        {{ end }}
+    </ul>
+</article>

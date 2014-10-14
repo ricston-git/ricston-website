@@ -1,0 +1,16 @@
+{{ partial "default_head.html" . }}
+
+<div id="content">
+
+    <div class="container">
+        {{ partial "miniMessage.html" .}}
+        <div style="color:gray" class="meta">
+            By <a rel="author" href="" title="{{ .Params.author }}" target="_blank">{{ .Params.author }}</a> &mdash; {{ .Date.Format "Mon, Jan 2, 2006" }}
+            {{ partial "tag.html" .}}
+        </div>
+        <div class="post">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ partial "default_foot.html" . }}

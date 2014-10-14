@@ -1,0 +1,15 @@
+<div class="container">
+    <!--<h4><a href='{{ .Permalink }}'> {{ .Title }}</a></h3>-->
+    <div style="color:gray" class="row">
+        {{ .Date.Format "Mon, Jan 2, 2006" }}
+    </div>
+    <div class="row">
+        {{ .Summary }}
+    </div>
+    <div class="row, right"><!-- summary permalink -->
+        <div style="height:10px"></div>
+        <a href='{{ .Permalink }}'>
+            <nobr>Read more →</nobr>
+        </a>
+    </div>
+</div>

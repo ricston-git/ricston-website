@@ -1,7 +1,10 @@
 ---
-draft = false
-title = "Media"
-date = 2014-05-20T10:04:31Z
+draft:        false
+Title:       "Media"
+Description: "Media"
+date: "2014-05-20T10:04:31Z"
+Author: Justin Calleja
+
 ---
 
 ## Media & Retail Case Study

@@ -1,7 +1,10 @@
 ---
-draft = false
-title = "Finance"
-date = 2014-05-20T10:04:31Z
+draft:        false
+Title:       "Finance"
+Description: "Finance"
+date: "2014-05-20T10:04:31Z"
+Author: "Justin Calleja"
+
 ---
 
 ## Global Financial Institution Case Study

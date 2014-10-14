@@ -1,7 +1,8 @@
 ---
 draft = false
 title = "Research"
-date = 2014-05-20T10:04:31Z
+date = "2014-05-20T10:04:31Z"
+author = "Justin Calleja"
 ---
 
 ## Research and Analysis Organisation Case Study

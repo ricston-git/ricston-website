@@ -4,10 +4,12 @@
 
     <div class="container">
         {{ partial "miniMessage.html" .}}
+        {{ if and .Params.author .Params.showMetaData }}
         <div style="color:gray" class="meta">
             By <a rel="author" href="" title="{{ .Params.author }}" target="_blank">{{ .Params.author }}</a> &mdash; {{ .Date.Format "Mon, Jan 2, 2006" }}
             {{ partial "tag.html" .}}
         </div>
+        {{ end }}
         <div class="post">
             {{ .Content }}
         </div>

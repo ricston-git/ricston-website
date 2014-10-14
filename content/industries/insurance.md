@@ -1,7 +1,9 @@
 ---
-draft = false
-title = "Insurance"
-date = 2014-05-20T10:04:31Z
+draft:        false
+Title:       "Insurance"
+Description: "Insurance"
+date: "2014-05-20T10:04:31Z"
+Author: "Justin Calleja"
 ---
 
 ## Health Insurance Case Study

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/fontello/fontello.css" media="screen"/>
     <link rel="stylesheet" href="/css/foundation.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/ricstonCustom.css" />
 
     <!-- All JavaScript Files (Remove those you will not use)-->
     <script type="text/javascript" src="/js/jquery.min.js"></script>
@@ -122,9 +123,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li {{ if eq .Url "/telecom/" }}class="active"{{end}}><a href="/industries">Industries</a>
+                            <li id="ricston-industries-list"><a href="/industries">Industries</a>
                                  <ul>
-                                    <li><a href="/industries/telecom"><i class="icon-user"></i>Telcom</a></li>
+                                    <li><a href="/industries/telecom"><i class="icon-user"></i>Telecom</a></li>
                                     <li><a href="/industries/media"><i class="icon-user"></i>Media &amp; Retail</a></li>
                                      <li><a href="/industries/insurance"><i class="icon-user"></i>Insurance</a></li>
                                      <li><a href="/industries/finance"><i class="icon-user"></i>Finance</a></li>
@@ -152,13 +153,7 @@
                             </li>
                             <li {{ if eq .Url "/integration/"}}class="active"{{end}}><a href="/integration">Integration</a></li>
                             <li {{ if eq .Url "/caseStudies/"}}class="active"{{end}}><a href="/caseStudies">Case Studies</a></li>
-                            <li><a href="#">Blog</a>
-                                <ul>
-                                    <li><a href="blog.html">Blog Layout</a></li>
-                                    <li><a href="blog-2.html">Blog Layout 2</a></li>
-                                    <li><a href="blog-3.html">Blog Layout 3</a></li>
-                                    <li><a href="blog-post.html">Blog Post</a></li>
-                                </ul>
+                            <li><a href="http://ricston.com/blog">Blog</a>
                             </li>
                             <li {{ if eq .Url "/contactUs/"}}class="active"{{end}}><a href="/contactUs">Contact Us</a></li>
                         </ul>

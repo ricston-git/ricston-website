@@ -1,7 +1,9 @@
 ---
-draft = false
-title = "Telecom"
-date = 2014-05-20T10:04:31Z
+draft:        false
+Title:       "Telecom"
+Description: "Telecom"
+date: "2014-05-20T10:04:31Z"
+Author: "Justin Calleja"
 ---
 
 ## Telecom's an Industry Undergoing Constant Rapid Change

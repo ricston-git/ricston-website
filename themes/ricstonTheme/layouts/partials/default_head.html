@@ -19,45 +19,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/ricstonCustom.css" />
 
-    <!-- All JavaScript Files (Remove those you will not use)-->
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <!-- JQUERY JS FILE -->
-    <script type="text/javascript" src="/js/flex-slider.min.js"></script>
-    <!-- FLEX SLIDER JS FILE -->
-    <script type="text/javascript" src="/js/navigation.min.js"></script>
-    <!-- MAIN NAVIGATION JS FILE -->
-    <script type="text/javascript" src="/js/jquery.layerslider.js"></script>
-    <!-- LAYER SLIDER JS FILE -->
-    <script type="text/javascript" src="/js/layerslider.transitions.js"></script>
-    <!-- LAYER SLIDER TRANSITIONS JS FILE -->
-    <script type="text/javascript" src="/js/map.min.js"></script>
-    <!-- GOOGLE MAP JS FILE -->
-    <script type="text/javascript" src="/js/jquery.theme.plugins.min.js"></script>
-    <!-- TRANSITIONS JS FILE -->
-    <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
-    <!-- CAROUSEL SLIDER JS FILE -->
-    <script type="text/javascript" src="/js/flickr.js"></script>
-    <!-- FLICKR WIDGET JS FILE -->
-    <script type="text/javascript" src="/js/instagram.js"></script>
-    <!-- INSTAGRAM WIDGET JS FILE -->
-    <script type="text/javascript" src="/js/jquery.twitter.js"></script>
-    <!--TWITTER WIDGET JS FILE -->
-    <script type="text/javascript" src="/js/prettyPhoto.min.js"></script>
-    <!-- PRETTYPHOTO JS FILE -->
-    <script type="text/javascript" src="/js/fitVids.js"></script>
-    <!-- FIT VIDEOS JS FILE -->
-    <script type="text/javascript" src="/js/isotope.min.js"></script>
-    <!-- ISOTOPE JS FILE -->
-    <script type="text/javascript" src="/js/custom.js"></script>
-    <!-- CUSTOMN JAVASCRIPT JS FILE -->
-    <!-- Style Switcher Files-->
-    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="/js/styleswitch.js"></script>
-    <script type="text/javascript" src="/js/colorpicker.js"></script>
-    <script type="text/javascript" src="/js/switcher.js"></script>
     <link rel="stylesheet" href="css/style-switcher.css" media="screen"/>
     <link rel="stylesheet" href="css/colorpicker.css" media="screen"/>
-    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
     <style type="text/css">
         .contact {
             font-family: "Open Sans",Arial,Verdana;
@@ -108,7 +71,7 @@
                 <div id="main-navigation" class="container" >
                     <div class="container">
                         <ul class="main-menu">
-                            <li  {{ if eq .Url "/"}} class="active"{{end}}><a href="/index.html" title="Home">Home </a>
+                            <li id="ricston-home-nav-menu"><a href="/index.html" title="Home">Home </a>
                                 <ul>
                                     <li><a href="index.html">Layer Slider (Default)</a></li>
                                     <li><a href="flex-slider.html">Flex Slider</a></li>
@@ -123,7 +86,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li id="ricston-industries-list"><a href="/industries">Industries</a>
+                            <li id="ricston-industries-nav-menu"><a href="/industries">Industries</a>
                                  <ul>
                                     <li><a href="/industries/telecom"><i class="icon-user"></i>Telecom</a></li>
                                     <li><a href="/industries/media"><i class="icon-user"></i>Media &amp; Retail</a></li>
@@ -137,17 +100,12 @@
                                     <!--<li><a href="404-error.html"><i class="icon-medkit"></i>404 Error</a></li>-->
                                 </ul>
                             </li>
-                            <li {{ if eq .Url "/analytics/" }}class="active"{{end}}
-                                {{ if eq .Url "/tech/" }}class="active"{{end}}
-                                {{ if eq .Url "/techbigdata/" }}class="active"{{end}}
-                                {{ if eq .Url "/techdevops/" }}class="active"{{end}}
-                                {{ if eq .Url "/techopensource/" }}class="active"{{end}}
-                            ><a href="/tech">Tech</a>
+                            <li id="ricston-tech-nav-menu"><a href="/tech">Tech</a>
                                 <ul>
-                                    <li><a href="/analytics/">Analytics</a></li>
-                                    <li><a href="/techbigdata/">Big Data</a></li>
-                                    <li><a href="/techdevops/">Dev Ops</a></li>
-                                    <li><a href="/techopensource/">Open Source</a></li>
+                                    <li><a href="/tech/analytics/">Analytics</a></li>
+                                    <li><a href="/tech/bigdata/">Big Data</a></li>
+                                    <li><a href="/tech/devops/">Dev Ops</a></li>
+                                    <li><a href="/tech/opensource/">Open Source</a></li>
                                 </ul>
 
                             </li>

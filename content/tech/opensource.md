@@ -4,7 +4,6 @@ Description: "Open Source Monitoring"
 Tags:        [ "IOT", "java", "light weight" ]
 date:        "2013-06-20"
 Topics:      [ "IOT", "java", "light weight" ]
-Slug:        "Open Source Monitoring"
 Author: Richard Donovan
 ---
 

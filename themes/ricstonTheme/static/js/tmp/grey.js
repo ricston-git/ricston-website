@@ -3,11 +3,20 @@
         var pathname = url.pathname;
         console.log("pathname is: " + pathname);
 
-        if(pathname.lastIndexOf("/industries", 0) === 0) {
-            console.log("about to add class active");
-            $("#ricston-industries-list").addClass("active");
-        } else if(pathname.lastIndexOf("/tech", 0) === 0) {
-
+        var addActiveClass = function(idStr) {
+            $(idStr).addClass("active");
         }
+
+        if(pathname === "/") {
+            addActiveClass("#ricston-home-nav-menu");
+
+        } else if(pathname.lastIndexOf("/industries/", 0) === 0) {
+            // $("#ricston-industries-list").addClass("active");
+            addActiveClass("#ricston-industries-nav-menu");
+        } else if(pathname.lastIndexOf("/tech/", 0) === 0) {
+            addActiveClass("#ricston-tech-nav-menu");
+        }
+
+        
     });
 })(jQuery, location);

@@ -17,9 +17,42 @@ $(document).ready(function($) {
         });
   /*STICKY NAVIGATION*/
 
-  $.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=trendyWebStar&count=1'), function(tweets){
-    $("#twitter").html(tz_format_twitter(tweets));
-  });  
+  // $.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=trendyWebStar&count=1'), function(tweets){
+  //   $("#twitter").html(tz_format_twitter(tweets));
+  // });  
+  //
+
+/*
+    $.ajax({
+        type:'GET',
+        dataType:'jsonp',
+        url: 'https://api.twitter.com/1.1/statuses/user_timeline.json',
+        data: { screen_name:'ricston' }, //show retweets
+        success: function(data, textStatus, XMLHttpRequest) {
+            console.log("twitter GET succeeded");
+            $("#twitter").html(tz_format_twitter(data));
+        },
+        error: function(req, status, error) {
+            console.log("twitter GET failed");
+            console.log("req:");
+            console.log(req);
+            console.log("status:");
+            console.log(status);
+            console.log("error:");
+            console.log(error);
+        },
+        complete: function(jqXHR, textStatus) {
+            console.log("twitter GET completed");
+            console.log("jqXHR:");
+            console.log(jqXHR);
+            console.log("textStatus:");
+            console.log(textStatus);
+            
+        }
+    });
+*/
+
+
 /*----------------------------------------------------------*/
  /*CONTACT FORM JS */
  /*----------------------------------------------------------*/

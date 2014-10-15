@@ -1,7 +1,7 @@
 (function($, url) {
     $(function() {
         var pathname = url.pathname;
-        console.log("pathname is: " + pathname);
+        // console.log("pathname is: " + pathname);
 
         var addActiveClass = function(idStr) {
             $(idStr).addClass("active");

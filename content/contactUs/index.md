@@ -18,4 +18,4 @@ date = 2014-05-20T10:04:31Z
 
 **Phone**: +356 2133 4457     Fax:+356 2133 4156
 
-**Email**: You can reach us on info at ricston.com or by using the contact form below.
+**eEail**: You can reach us on info at ricston.com or by using the contact form below.

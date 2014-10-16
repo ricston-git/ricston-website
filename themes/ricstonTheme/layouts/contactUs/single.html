@@ -18,7 +18,9 @@
             <div id="content">
                 <div class="container">
                     <div class="post">
-                        {{ .Content }}
+                        <!-- {{ .Content }} -->
+                        
+                        {{ partial "contactus/content.html" . }}
                         {{ partial "contactus/form.html" . }}
                     </div>
                 </div>

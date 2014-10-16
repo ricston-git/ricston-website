@@ -9,3 +9,15 @@ h2 {
 h3 {
     font-size: 1.30rem
 }
+
+.r-contact-us-office {
+    padding-top: 1.2em;
+}
+
+.r-contact-us-office h2 {
+    text-align: center;
+}
+
+#contactForm {
+    padding-top: 1.2em;
+}

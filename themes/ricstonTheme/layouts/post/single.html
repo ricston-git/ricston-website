@@ -1,11 +1,33 @@
-{{ partial "default_head.html" . }}
-<div id="content">
-    <div class="container">
-        <div class="post">
-            <h1 class="post-title">{{ .Title }}</h1>
-            <span class="post-date"> .Date.Format .Site.Params.DateForm </span>
-            {{ .Content }}
+<!DOCTYPE html>
+<html>
+<!-- Derived from http://themes.trendywebstar.com/BusinessBox/ -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/html5shiv.js"></script>
+<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Ricston</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+{{ partial "style_tags.html" . }}
+{{ partial "script_tags.html" . }}
+</head>
+<body>
+
+<div id="container">
+    <div id="wrapp">
+        {{ partial "header/default_head_header.html" . }}
+        <div id="content">
+            <div class="container">
+                <div class="post">
+                    <h1 class="post-title">{{ .Title }}</h1>
+                    <span class="post-date"> .Date.Format .Site.Params.DateForm </span>
+                    {{ .Content }}
+                </div>
+            </div>
         </div>
     </div>
 </div>
-{{ partial "default_foot.html" . }}
+
+</body>
+</html>

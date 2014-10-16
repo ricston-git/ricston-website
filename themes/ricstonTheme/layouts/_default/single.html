@@ -1,18 +1,38 @@
-{{ partial "default_head.html" . }}
+<!DOCTYPE html>
+<html>
+<!-- Derived from http://themes.trendywebstar.com/BusinessBox/ -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/html5shiv.js"></script>
+<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Ricston</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<div id="content">
+{{ partial "style_tags.html" . }}
+{{ partial "script_tags.html" . }}
+</head>
+<body>
+<div id="container">
+    <div id="wrapp">
+        {{ partial "header/default_head_header.html" . }}
 
-    <div class="container">
-        {{ partial "miniMessage.html" .}}
-        {{ if and .Params.author .Params.showMetaData }}
-        <div style="color:gray" class="meta">
-            By <a rel="author" href="" title="{{ .Params.author }}" target="_blank">{{ .Params.author }}</a> &mdash; {{ .Date.Format "Mon, Jan 2, 2006" }}
-            {{ partial "tag.html" .}}
+        <div id="content">
+            <div class="container">
+                {{ partial "miniMessage.html" .}}
+                {{ if and .Params.author .Params.showMetaData }}
+                <div style="color:gray" class="meta">
+                    By <a rel="author" href="" title="{{ .Params.author }}" target="_blank">{{ .Params.author }}</a> &mdash; {{ .Date.Format "Mon, Jan 2, 2006" }}
+                    {{ partial "tag.html" .}}
+                </div>
+                {{ end }}
+                <div class="post">
+                    {{ .Content }}
+                </div>
+            </div>
         </div>
-        {{ end }}
-        <div class="post">
-            {{ .Content }}
-        </div>
+
     </div>
 </div>
-{{ partial "default_foot.html" . }}
+</body>
+</html>

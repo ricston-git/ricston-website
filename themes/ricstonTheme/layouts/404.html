@@ -1,11 +1,30 @@
-{{ partial "default_head.html" . }}
+<!DOCTYPE html>
+<html>
+<!-- Derived from http://themes.trendywebstar.com/BusinessBox/ -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/html5shiv.js"></script>
+<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Ricston</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<article class="container">
-    <header><h1>404</h1></header>
-    <section>
-        <p>That doesn't seem to exist! Recent articles are below or search the <a href="/post/">archives</a>.</p>
-    </section>
-    <hr>
-</article>
+{{ partial "style_tags.html" . }}
+{{ partial "script_tags.html" . }}
+</head>
+<body>
+<div id="container">
+    <div id="wrapp">
+        {{ partial "header/default_head_header.html" . }}
 
-{{ partial "default_foot.html" . }}
+        <article class="container">
+            <header><h1>404</h1></header>
+            <section>
+                <p>That doesn't seem to exist! Recent articles are below or search the <a href="/post/">archives</a>.</p>
+            </section>
+            <hr>
+        </article>
+    </div>
+</div>
+</body>
+</html>

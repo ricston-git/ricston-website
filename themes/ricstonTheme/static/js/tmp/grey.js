@@ -6,7 +6,7 @@
             $(idStr).addClass("active");
         }
 
-        if(pathname === "/" || pathname === "/aboutUs/" || pathname === "/ourServices/") {
+        if(pathname === "/" || pathname === "/aboutus/" || pathname === "/ourservices/") {
 
             addActiveClass("#ricston-home-nav-menu");
 
@@ -18,7 +18,7 @@
 
             addActiveClass("#ricston-tech-nav-menu");
 
-        } else if(pathname.lastIndexOf("/caseStudies/", 0) === 0) {
+        } else if(pathname.lastIndexOf("/casestudies/", 0) === 0) {
 
             addActiveClass("#ricston-casestudies-nave-menu");
 
@@ -26,7 +26,7 @@
 
             addActiveClass("#ricston-integration-nav-menu");
 
-        } else if(pathname.lastIndexOf("/contactUs/", 0) === 0) {
+        } else if(pathname.lastIndexOf("/contactus/", 0) === 0) {
 
             addActiveClass("#ricston-contactus-nav-menu");
 
